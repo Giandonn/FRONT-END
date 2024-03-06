@@ -8,5 +8,9 @@ function checkFields() {
     if (checkEmail != "" && checkSenha != "") {
         document.getElementById('cad').hidden = true;
         document.getElementById('loading').hidden = false;
+
+        setTimeout(() => {
+            window.location.href="dashboard.html";
+          }, 1000);
     }
 }

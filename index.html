@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <div>
+    <div id="cad">
         <label for="txtEmail">Email:</label>
         <input type="email" name="txtEmail" id="txtEmail"> </br>
         <span class="warning" id="emailSpan" hidden>Preencha o campo Email</span>
@@ -17,6 +17,9 @@
         <input type="password" name="txtSenha" id="txtSenha">
         </br>
         <button id="btnCad" onclick="checkFields()">Cadastrar</button>
+    </div>
+    <div id="loading" hidden>
+        <h1>Carregando</h1>
     </div>
 </body>
 <script src="assets/js/index.js"></script>
